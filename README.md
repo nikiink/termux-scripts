@@ -73,34 +73,28 @@ Create an archive of the chat history database (msgstore) and of all whatsapp do
 ```
 
 > [!CAUTION]
-> Caution!, make sure you have saved media before using this script,
-> creating an archive before.
+> Caution!, make sure you have saved media of that year before using this script,
+> for example creating an year archive before.
 
 This scripts deletes all WhatsApp media of the given year (2010 in the example).
 
 #### Camera Year Archive
 
 ```bash
-./wa_year_media_archive.sh 2010
+./camera_year_archive.sh 2010
 ```
-Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
+Create an archive of the given year (2010 in the example) with all camera images and
+videos of that year and saves it in `Internal Memory/Android/media/com.termux/camera-2010.7z`
 
 #### Camera Year Cleaner
 
 ```bash
-./wa_year_media_archive.sh 2010
+./camera_year_cleaner.sh 2010
 ```
-Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
 
-#### Whatsapp Media Archive
+> [!CAUTION]
+> Caution!, make sure you have saved camera images and videos of that year
+> before using this script, for example creating an year archive before.
 
-```bash
-./wa_year_media_archive.sh 2010
-```
-Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
+This scripts deletes all camera images and videos of the given year (2010 in the example).
 
-
-wa_year_media_cleaner.sh 2010
-
-camera_year_archive.sh 2010
-camera_year_cleaner.sh 2010
