@@ -28,9 +28,9 @@ The archive files are created in:
 - ~/storage/media-0 -> Internal/Android/media/com.termux
 - ~/storage/media-1 -> SD Card/Android/media/com.termux
 
-### Commands
+### Executing scripts
 
-The commands are bash script, so must be marked as executables using `chmod +x script.sh` command to be executed directly (`./script.sh`) or can be executed using bash command `bash script.sh`.
+The commands are bash scripts, so must be marked as executables using `chmod +x script.sh` command to be executed directly (`./script.sh`) or can be executed using bash command `bash script.sh`.
 
 1. copy the script on android in a folder of choice (for example on internal storage)
 2. open termux
@@ -39,9 +39,10 @@ The commands are bash script, so must be marked as executables using `chmod +x s
         cd storage/shared
 
 4. run the script
+
         bash wa_year_media_archive.sh 2010
 
-Or:
+Or marking as executables:
 ```bash
 # move where chmod +x works
 mv ~/storage/shared/wa_year_media_archive.sh ~
@@ -49,8 +50,56 @@ chmod +x ~/*.sh
 ./wa_year_media_archive.sh 2010
 ```
 
-wa_year_media_archive.sh 2010
-wa_msgstore_docs_archive.sh
+### Scripts operations
+
+#### Whatsapp Year Media Archive
+
+```bash
+./wa_year_media_archive.sh 2010
+```
+Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`.
+
+#### Whatsapp Msgstore and Documents Archive
+
+```bash
+./wa_msgstore_docs_archive.sh
+```
+Create an archive of the chat history database (msgstore) and of all whatsapp documents and saves it in `SD Card/Android/media/com.termux/wa-msgstore-and-docs.7z`.
+
+#### WhatsApp Media Year Cleaner
+
+```bash
+./wa_year_media_cleaner.sh 2010
+```
+
+> [!CAUTION]
+> Caution!, make sure you have saved media before using this script,
+> creating an archive before.
+
+This scripts deletes all WhatsApp media of the given year (2010 in the example).
+
+#### Camera Year Archive
+
+```bash
+./wa_year_media_archive.sh 2010
+```
+Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
+
+#### Camera Year Cleaner
+
+```bash
+./wa_year_media_archive.sh 2010
+```
+Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
+
+#### Whatsapp Media Archive
+
+```bash
+./wa_year_media_archive.sh 2010
+```
+Create an archive of the given year (2010 in the example) with all whatsapp media of that year and saves it in `SD Card/Android/media/com.termux/wa-media-2010.7z`
+
+
 wa_year_media_cleaner.sh 2010
 
 camera_year_archive.sh 2010
