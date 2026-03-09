@@ -14,11 +14,10 @@ rm -v $filename*
 echo "Nome file: $filename"
 
 7z a -v3g -mx=0 "$filename" -r0 \
-  -xr0!WhatsApp A\* \
-  -xr0!WhatsApp I\* \
-  -xr0!WhatsApp S\* \
-  -xr0!WhatsApp V\* \
-  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/WhatsApp\ Document\* \
-  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/Backup\* \
-  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/Database\*
-
+  "-xr0!WhatsApp A*" \
+  "-xr0!WhatsApp I*" \
+  "-xr0!WhatsApp S*" \
+  "-xr0!WhatsApp V*" \
+  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/Media \
+  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/Backups \
+  ~/storage/shared/Android/media/com.whatsapp/WhatsApp/Databases
